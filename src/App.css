@@ -1,0 +1,28 @@
+body{
+  background: grey;
+}
+
+.posts{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.container{
+  height: 100vh;
+  background: rgb(158, 157, 157);
+}
+
+.post-content{
+  transition: transform 100ms ease-in-out;
+  background-color: white;
+}
+
+.post-content:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.posts img{
+  max-width: 100%;
+}
